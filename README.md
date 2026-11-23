@@ -1,13 +1,14 @@
 # yeslist.
 
-**Beautiful event invitations that people actually reply to.** A host creates an invitation,
-shares one link, and watches the guest list fill up live. Guests reply with just their name: no
-app, no account, no password.
+**Beautiful event invitations that people actually reply to.**
 
-> **About this repository.** This is a public **project showcase**: screenshots, architecture and
-> engineering notes. The application's source code is maintained in a **private** repository.
-> I'm happy to walk through the code in an interview or share access on request.
+A host creates an invitation, shares one link, and watches the guest list fill up live. Guests reply with just their name: no app, no account, no password.
 
+### [Live Demo — getyeslist.com](https://getyeslist.com)
+
+**[Try Yeslist](https://getyeslist.com)** · [View Screenshots](#screenshots) · [Explore the Architecture](#architecture)
+
+**About this repository:** This is a public project showcase containing screenshots, architecture and engineering notes. The application's source code is maintained in a private repository. I'm happy to walk through the code in an interview or share access on request.
 ## Screenshots
 
 **Homepage**
@@ -145,7 +146,7 @@ bugs are first run against the unfixed code, to prove they catch the bug.
 | Environment | Builds | Access |
 | --- | --- | --- |
 | Staging | every branch and pull request | Protected |
-| Production | only the `production` branch | Protected until public launch |
+| Production | only the `production` branch | Public — https://getyeslist.com |
 
 1. **Merge** a focused pull request to `main` once CI passes: migrations apply cleanly; type
    checks, lint and formatting; unit, integration, end-to-end and bot-check suites; the production
@@ -174,8 +175,13 @@ Other safeguards:
 
 ## Status
 
-Feature-complete for a small public beta; launch-readiness work is under way. The production site
-stays private until the launch checklist (including legal pages) is complete.
+**Live — Public Beta**
+
+Yeslist is deployed and publicly accessible at **https://getyeslist.com**.
+
+The application supports event creation, passwordless host authentication, name-only guest RSVPs, live guest-list updates, automatic waitlists and invite-only events.
+
+This is an actively maintained personal software engineering project.
 
 ---
 
